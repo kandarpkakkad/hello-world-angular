@@ -17,6 +17,8 @@ import { Day13Component } from './day13/day13.component';
 import { Day14Component } from './day14/day14.component';
 import { Day15Component } from './day15/day15.component';
 import { Day16Component } from './day16/day16.component';
+import { Day19Component } from './day19/day19.component';
+import { PeopleDetailsService } from './people-details.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +36,10 @@ import { Day16Component } from './day16/day16.component';
     Day14Component,
     Day15Component,
     Day16Component,
+    Day19Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  providers: [PeopleDetailsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
